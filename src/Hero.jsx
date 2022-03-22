@@ -34,7 +34,7 @@ const Hero = () => {
         <h1
           id="hero-heading"
           ref={headingRef}
-          className="h-[44.8vw] font-['Ibarra_Real_Nova'] text-[2.5rem] font-bold leading-[2.625rem] tracking-[-0.36px] text-[#33323D] md:h-[16.4vw] xl:h-[13.88vw] xl:text-[3.125rem] xl:leading-[3.125rem]"
+          className="h-full w-full font-['Ibarra_Real_Nova'] text-[2.5rem] font-bold leading-[2.625rem] tracking-[-0.36px] text-[#33323D] md:h-[16.4vw] xl:h-[13.88vw] xl:text-[3.125rem] xl:leading-[3.125rem]"
         ></h1>
         <button
           id="aboutMeBtn"
