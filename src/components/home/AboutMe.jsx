@@ -14,27 +14,38 @@ const AboutMe = () => {
 
     const element = aboutRef.current;
 
-    gsap.to(element.querySelector("#about-img"), {
-      scrollTrigger: {
-        trigger: element,
-        start: "top center",
-        toggleActions: "play none none pause",
-      },
-      duration: 1.5,
-      x: 0,
-      opacity: 1,
-    });
+    gsap.fromTo(
+      element.querySelector("#about-img"),
+      { opacity: 0, x: -300 },
+      {
+        scrollTrigger: {
+          trigger: element,
+          start: "top center",
+          toggleActions: "play none none pause",
+        },
+        duration: 1.5,
+        x: 0,
+        opacity: 1,
+      }
+    );
 
-    gsap.to(element.querySelector("#about-content"), {
-      scrollTrigger: {
-        trigger: element,
-        start: "top center",
-        toggleActions: "play none none pause",
+    gsap.fromTo(
+      element.querySelector("#about-content"),
+      {
+        opacity: 0,
+        x: 300,
       },
-      duration: 1.5,
-      x: 0,
-      opacity: 1,
-    });
+      {
+        scrollTrigger: {
+          trigger: element,
+          start: "top center",
+          toggleActions: "play none none pause",
+        },
+        duration: 1.5,
+        x: 0,
+        opacity: 1,
+      }
+    );
   });
 
   return (
@@ -43,10 +54,7 @@ const AboutMe = () => {
       className="flex flex-col gap-8 md:flex-row md:items-center md:gap-[4.313rem] xl:w-[91.44%] xl:gap-[7.813rem]"
       id="about-me"
     >
-      <div
-        id="about-img"
-        className="-translate-x-[300px] opacity-0 md:w-[40.78%] xl:w-[53.20%]"
-      >
+      <div id="about-img" className="md:w-[40.78%] xl:w-[53.20%]">
         <img className="md:hidden" src={mobileAboutImg} alt="" />
         <img
           className="hidden md:block xl:hidden"
@@ -57,7 +65,7 @@ const AboutMe = () => {
       </div>
       <div
         id="about-content"
-        className="flex translate-x-[300px] flex-col border-y border-solid border-[#33323D]/[0.15] pt-[2.063rem] pb-[3.25rem] opacity-0 md:w-[49.20%] md:pb-[2.938rem] md:pt-[3.188rem] xl:w-[34.48%]"
+        className="flex flex-col border-y border-solid border-[#33323D]/[0.15] pt-[2.063rem] pb-[3.25rem] opacity-0 md:w-[49.20%] md:pb-[2.938rem] md:pt-[3.188rem] xl:w-[34.48%]"
       >
         <h2 className="mb-[1.75rem] font-['Ibarra_Real_Nova'] text-[2.5rem] font-bold leading-[2.625rem] tracking-[-0.36px] text-[#33323D]">
           About Me
