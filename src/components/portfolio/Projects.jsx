@@ -7,6 +7,12 @@ import Art from "./Art";
 import Suite from "./Suite";
 import Time from "./Time";
 import Crowdfunding from "./Crowdfunding";
+import Pricing from "./Pricing";
+import Testimonials from "./Testimonials";
+import Equalizer from "./Equalizer";
+import Meet from "./Meet";
+import Pod from "./Pod";
+import FAQ from "./FAQ";
 
 const Projects = () => {
   return (
@@ -20,6 +26,12 @@ const Projects = () => {
       <Suite />
       <Time />
       <Crowdfunding />
+      <Pricing />
+      <Testimonials />
+      <Equalizer />
+      <Meet />
+      <Pod />
+      <FAQ />
     </section>
   );
 };
