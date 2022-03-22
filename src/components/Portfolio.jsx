@@ -1,5 +1,5 @@
-import Header from "./components/portfolio/Header";
-import Main from "./components/portfolio/Main";
+import Header from "./portfolio/Header";
+import Main from "./portfolio/Main";
 
 const Portfolio = () => {
   return (

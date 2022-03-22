@@ -1,7 +1,7 @@
-import Home from "./Home";
-import Portfolio from "./Portfolio";
+import Home from "./components/Home";
+import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
-import Contact from "./Contact";
+import Contact from "./components/Contact";
 import MobileNav from "./components/MobileNav";
 import Navbar from "./components/Navbar";
 import React, { useState, useEffect } from "react";
