@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header>
-      <h1 class="absolute left-[-999999px] top-[-999999px]">My Projects</h1>
+      <h1 className="absolute left-[-999999px] top-[-999999px]">My Projects</h1>
     </header>
   );
 };
