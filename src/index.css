@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .inactive-button {
+    @apply pointer-events-none scale-0 opacity-0;
+  }
+
+  .inactive-nav {
+    @apply pointer-events-none opacity-0;
+  }
+}
