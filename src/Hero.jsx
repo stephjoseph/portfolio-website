@@ -4,18 +4,25 @@ import tabletHeroImg from "./images/homepage/tablet/image-homepage-hero@2x.jpg";
 import desktopHeroImg from "./images/homepage/desktop/image-homepage-hero@2x.jpg";
 
 const Hero = () => {
-  const headingRef = useRef();
+  const heroRef = useRef(null);
+
+  function handleClick() {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: "#about-me", offsetY: 50 },
+    });
+  }
 
   useEffect(() => {
     gsap.registerPlugin(TextPlugin);
-
-    gsap.to(headingRef.current, {
+    const element = heroRef.current;
+    gsap.to(element.querySelector("#hero-heading"), {
       duration: 3.5,
       text: {
-        value: `Hey, I’m 
-          <span class="text-[#5FB4A2]">S</span><span class="text-[#5FB4A2]">t</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">p</span><span class="text-[#5FB4A2]">h</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">n</span> 
+        value: `Hey, I’m
+          <span class="text-[#5FB4A2]">S</span><span class="text-[#5FB4A2]">t</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">p</span><span class="text-[#5FB4A2]">h</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">n</span>
           <span class="text-[#5FB4A2]">J</span><span class="text-[#5FB4A2]">o</span><span class="text-[#5FB4A2]">s</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">p</span><span class="text-[#5FB4A2]">h</span>
-          and I love building <span class="text-[#5FB4A2]">b</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">a</span><span class="text-[#5FB4A2]">u</span><span class="text-[#5FB4A2]">t</span><span class="text-[#5FB4A2]">i</span><span class="text-[#5FB4A2]">f</span><span class="text-[#5FB4A2]">u</span><span class="text-[#5FB4A2]">l</span> 
+          and I love building <span class="text-[#5FB4A2]">b</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">a</span><span class="text-[#5FB4A2]">u</span><span class="text-[#5FB4A2]">t</span><span class="text-[#5FB4A2]">i</span><span class="text-[#5FB4A2]">f</span><span class="text-[#5FB4A2]">u</span><span class="text-[#5FB4A2]">l</span>
           <span class="text-[#5FB4A2]">w</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">b</span><span class="text-[#5FB4A2]">s</span><span class="text-[#5FB4A2]">i</span><span class="text-[#5FB4A2]">t</span><span class="text-[#5FB4A2]">e</span><span class="text-[#5FB4A2]">s</span>`,
       },
 
@@ -24,7 +31,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="relative">
+    <div ref={heroRef} className="relative">
       <div className="mb-6 md:mb-0">
         <img className="md:hidden" src={mobileHeroImg} alt="" />
         <img className="hidden md:block xl:hidden" src={tabletHeroImg} alt="" />
@@ -33,11 +40,11 @@ const Hero = () => {
       <div className="relative flex flex-col gap-8 bg-[#FAFAFA] md:absolute md:left-0 md:bottom-0 md:h-[17.375rem] md:w-[32.125rem] md:gap-12 md:pr-14 md:pt-14 xl:h-[22.313rem] xl:w-[27.813rem] xl:gap-[3.313rem]">
         <h1
           id="hero-heading"
-          ref={headingRef}
           className="h-full w-full font-['Ibarra_Real_Nova'] text-[2.5rem] font-bold leading-[2.625rem] tracking-[-0.36px] text-[#33323D] md:h-[16.4vw] xl:h-[13.88vw] xl:text-[3.125rem] xl:leading-[3.125rem]"
         ></h1>
         <button
           id="aboutMeBtn"
+          onClick={handleClick}
           className="group flex w-[12.5rem] items-center bg-[#203A4C] hover:bg-[#5FB4A2] active:bg-[#5FB4A2]"
           type="button"
         >
