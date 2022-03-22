@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="flex w-full max-w-[48rem] flex-col items-center gap-10 bg-[#33323D] px-[8.5rem] py-14 md:max-w-[80rem] md:flex-row md:gap-0 md:py-6 md:px-[2.438rem] xl:max-w-[120rem] xl:px-[10.313rem]">
-      <a className="md:mr-12" href="./index.html">
+      <Link className="md:mr-12" to="/">
         <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
           <path
             fill="white"
@@ -9,32 +11,32 @@ const Footer = () => {
             d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"
           />
         </svg>
-      </a>
+      </Link>
       <nav className="md:mr-auto" id="footer-nav">
         <ul className="flex flex-col items-center gap-8 text-center md:flex-row md:gap-[2.688rem]">
           <li>
-            <a
+            <Link
               className="text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-white hover:text-[#5FB4A2] active:text-[#5FB4A2]"
-              href="/"
+              to="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-white hover:text-[#5FB4A2] active:text-[#5FB4A2]"
-              href="/portfolio"
+              to="/portfolio"
             >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-white hover:text-[#5FB4A2] active:text-[#5FB4A2]"
-              href="/contact"
+              to="/contact"
             >
               Contact me
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

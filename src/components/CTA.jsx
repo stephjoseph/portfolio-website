@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   const CTARef = useRef(null);
@@ -30,12 +31,12 @@ const CTA = () => {
         Interested in doing a project together?
       </h2>
       <hr className="hidden h-px flex-grow md:block" />
-      <a
+      <Link
         className="flex h-12 w-[10.125rem] items-center justify-center border border-solid border-[#33323D] text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] hover:bg-[#33323D] hover:text-white active:bg-[#33323D] active:text-white"
-        href="/contact"
+        to="/contact"
       >
         Contact Me
-      </a>
+      </Link>
     </section>
   );
 };

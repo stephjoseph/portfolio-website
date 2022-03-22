@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
-import mobileHeroImg from "./images/homepage/mobile/image-homepage-hero@2x.jpg";
-import tabletHeroImg from "./images/homepage/tablet/image-homepage-hero@2x.jpg";
-import desktopHeroImg from "./images/homepage/desktop/image-homepage-hero@2x.jpg";
+import mobileHeroImg from "../../images/homepage/mobile/image-homepage-hero@2x.jpg";
+import tabletHeroImg from "../..//images/homepage/tablet/image-homepage-hero@2x.jpg";
+import desktopHeroImg from "../../images/homepage/desktop/image-homepage-hero@2x.jpg";
 
 const Hero = () => {
   const heroRef = useRef(null);

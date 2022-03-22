@@ -1,7 +1,8 @@
-import logo from "./logo.svg";
-import iconHamburger from "./images/icons/hamburger.svg";
-import iconClose from "./images/icons/close.svg";
-import React, { useState } from "react";
+import logo from "../logo.svg";
+import iconHamburger from "../images/icons/hamburger.svg";
+import iconClose from "../images/icons/close.svg";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const MobileNav = () => {
   const [isActive, setisActive] = useState(false);
@@ -11,14 +12,14 @@ const MobileNav = () => {
   }
   return (
     <nav>
-      <div className="relative mt-8 mb-10 flex w-full items-center justify-between md:hidden">
-        <a className="w-[3.755rem]" href="/">
+      <div className="relative flex w-full items-center justify-between pb-10 pt-8 md:hidden">
+        <Link className="w-[3.755rem]" to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <button
           className={`${
             isActive ? "inactive-button" : ""
-          } absolute top-[0.625rem] right-0 transition-[transform,_opacity] duration-300 ease-in`}
+          }  transition-[transform,_opacity] duration-300 ease-in`}
           id="openNav"
           type="button"
           onClick={handleClick}
@@ -28,7 +29,7 @@ const MobileNav = () => {
         <button
           className={`${
             !isActive ? "inactive-button" : ""
-          } absolute top-[0.438rem] right-[0.188rem] transition-[transform,_opacity] duration-300 ease-in`}
+          } absolute right-[0.188rem] transition-[transform,_opacity] duration-300 ease-in`}
           id="closeNav"
           type="button"
           onClick={handleClick}
@@ -45,28 +46,31 @@ const MobileNav = () => {
       >
         <ul className="flex h-[6.625rem] w-28 flex-col items-center justify-between gap-0 text-center">
           <li>
-            <a
+            <Link
               className="text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-white"
-              href="/"
+              to="/"
+              onClick={handleClick}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-white"
-              href="/portfolio"
+              to="/portfolio"
+              onClick={handleClick}
             >
               Portfolio
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-white"
-              href="/contact"
+              to="/contact"
+              onClick={handleClick}
             >
               Contact Me
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

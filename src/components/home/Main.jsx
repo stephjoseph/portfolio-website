@@ -1,5 +1,5 @@
 import AboutMe from "./AboutMe";
-import CTA from "./CTA";
+import CTA from "../CTA";
 
 const Main = () => {
   return (
