@@ -11,15 +11,22 @@ const CTA = () => {
 
     const element = CTARef.current;
 
-    gsap.to(element, {
-      scrollTrigger: {
-        trigger: element,
-        toggleActions: "play none none pause",
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        y: 100,
       },
-      duration: 1,
-      y: 0,
-      opacity: 1,
-    });
+      {
+        scrollTrigger: {
+          trigger: element,
+          toggleActions: "play none none pause",
+        },
+        duration: 1,
+        y: 0,
+        opacity: 1,
+      }
+    );
   });
   return (
     <section
