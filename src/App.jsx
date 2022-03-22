@@ -27,7 +27,10 @@ function App() {
           {size.x < 768 && <MobileNav />}
           {size.x >= 768 && <Navbar />}
         </div>
-        <div>
+        <div
+          id="content"
+          className="mb-20 flex  w-full max-w-[40rem] overflow-hidden  px-8 md:max-w-[64rem]  md:px-[2.438rem] xl:mb-[9.375rem] xl:max-w-[96rem] xl:px-[10.313rem]"
+        >
           <Switch>
             <Route exact path="/">
               <Home />
