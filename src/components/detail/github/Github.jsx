@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Main from "./Main";
 
-const Typemaster = () => {
+const Github = () => {
   return (
     <div>
       <Header />
@@ -10,4 +10,4 @@ const Typemaster = () => {
   );
 };
 
-export default Typemaster;
+export default Github;

@@ -11,6 +11,8 @@ import Tip from "./components/detail/tip/Tip";
 import Officelite from "./components/detail/officelite/Officelite";
 import Maker from "./components/detail/maker/Maker";
 import Typemaster from "./components/detail/typemaster/Typemaster";
+import Github from "./components/detail/github/Github";
+import Art from "./components/detail/art/Art";
 
 function App() {
   const [size, setSize] = useState({
@@ -58,6 +60,12 @@ function App() {
             </Route>
             <Route path="/portfolio/typemaster">
               <Typemaster />
+            </Route>
+            <Route path="/portfolio/github-user-search">
+              <Github />
+            </Route>
+            <Route path="/portfolio/art-gallery">
+              <Art />
             </Route>
           </Switch>
         </div>
