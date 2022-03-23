@@ -17,6 +17,7 @@ import Suite from "./components/detail/suite/Suite";
 import Time from "./components/detail/time/Time";
 import Crowdfunding from "./components/detail/crowdfunding/Crowdfunding";
 import Pricing from "./components/detail/interactive-pricing/Pricing";
+import Testimonials from "./components/detail/testimonials-slider/Testimonials";
 
 function App() {
   const [size, setSize] = useState({
@@ -82,6 +83,9 @@ function App() {
             </Route>
             <Route exact path="/portfolio/interactive-pricing">
               <Pricing />
+            </Route>
+            <Route exact path="/portfolio/testimonials-slider">
+              <Testimonials />
             </Route>
           </Switch>
         </div>
