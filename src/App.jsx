@@ -8,6 +8,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
 import Tip from "./components/detail/tip/Tip";
+import Officelite from "./components/detail/officelite/Officelite";
 
 function App() {
   const [size, setSize] = useState({
@@ -46,6 +47,9 @@ function App() {
             </Route>
             <Route path="/portfolio/tip">
               <Tip />
+            </Route>
+            <Route path="/portfolio/officelite">
+              <Officelite />
             </Route>
           </Switch>
         </div>
