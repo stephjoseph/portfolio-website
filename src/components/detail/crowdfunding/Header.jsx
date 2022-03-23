@@ -1,6 +1,6 @@
-import mobileHeroImg from "../../../images/detail/mobile/image-time-hero.jpg";
-import tabletHeroImg from "../../../images/detail/tablet/image-time-hero.jpg";
-import desktopHeroImg from "../../../images/detail/desktop/image-time-hero.jpg";
+import mobileHeroImg from "../../../images/detail/mobile/image-crowdfunding-hero.jpg";
+import tabletHeroImg from "../../../images/detail/tablet/image-crowdfunding-hero.jpg";
+import desktopHeroImg from "../../../images/detail/desktop/image-crowdfunding-hero.jpg";
 
 const Header = () => {
   return (

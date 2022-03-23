@@ -1,9 +1,9 @@
-import mobilePreview1 from "../../../images/detail/mobile/image-time-preview-1.jpg";
-import tabletPreview1 from "../../../images/detail/tablet/image-time-preview-1.jpg";
-import desktopPreview1 from "../../../images/detail/desktop/image-time-preview-1.jpg";
-import mobilePreview2 from "../../../images/detail/mobile/image-time-preview-2.jpg";
-import tabletPreview2 from "../../../images/detail/tablet/image-time-preview-2.jpg";
-import desktopPreview2 from "../../../images/detail/desktop/image-time-preview-2.jpg";
+import mobilePreview1 from "../../../images/detail/mobile/image-crowdfunding-preview-1.jpg";
+import tabletPreview1 from "../../../images/detail/tablet/image-crowdfunding-preview-1.jpg";
+import desktopPreview1 from "../../../images/detail/desktop/image-crowdfunding-preview-1.jpg";
+import mobilePreview2 from "../../../images/detail/mobile/image-crowdfunding-preview-2.jpg";
+import tabletPreview2 from "../../../images/detail/tablet/image-crowdfunding-preview-2.jpg";
+import desktopPreview2 from "../../../images/detail/desktop/image-crowdfunding-preview-2.jpg";
 
 const Previews = () => {
   return (

@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Main from "./Main";
 
-const Time = () => {
+const Crowdfunding = () => {
   return (
     <div>
       <Header />
@@ -10,4 +10,4 @@ const Time = () => {
   );
 };
 
-export default Time;
+export default Crowdfunding;

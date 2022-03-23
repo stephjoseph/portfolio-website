@@ -15,6 +15,7 @@ import Github from "./components/detail/github/Github";
 import Art from "./components/detail/art/Art";
 import Suite from "./components/detail/suite/Suite";
 import Time from "./components/detail/time/Time";
+import Crowdfunding from "./components/detail/crowdfunding/Crowdfunding";
 
 function App() {
   const [size, setSize] = useState({
@@ -74,6 +75,9 @@ function App() {
             </Route>
             <Route exact path="/portfolio/time-tracking-dashboard">
               <Time />
+            </Route>
+            <Route exact path="/portfolio/crowdfunding">
+              <Crowdfunding />
             </Route>
           </Switch>
         </div>
