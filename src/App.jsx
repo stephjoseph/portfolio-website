@@ -20,6 +20,8 @@ import Pricing from "./components/detail/interactive-pricing/Pricing";
 import Testimonials from "./components/detail/testimonials-slider/Testimonials";
 import Equalizer from "./components/detail/equalizer/Equalizer";
 import Meet from "./components/detail/meet/Meet";
+import Pod from "./components/detail/pod/Pod";
+import FAQAccordion from "./components/detail/faq-accordion/FAQAccordion";
 
 function App() {
   const [size, setSize] = useState({
@@ -94,6 +96,12 @@ function App() {
             </Route>
             <Route exact path="/portfolio/meet">
               <Meet />
+            </Route>
+            <Route exact path="/portfolio/pod">
+              <Pod />
+            </Route>
+            <Route exact path="/portfolio/faq-accordion">
+              <FAQAccordion />
             </Route>
           </Switch>
         </div>
