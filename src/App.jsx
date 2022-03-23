@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
 import Tip from "./components/detail/tip/Tip";
 import Officelite from "./components/detail/officelite/Officelite";
+import Maker from "./components/detail/maker/Maker";
 
 function App() {
   const [size, setSize] = useState({
@@ -50,6 +51,9 @@ function App() {
             </Route>
             <Route path="/portfolio/officelite">
               <Officelite />
+            </Route>
+            <Route path="/portfolio/maker">
+              <Maker />
             </Route>
           </Switch>
         </div>
