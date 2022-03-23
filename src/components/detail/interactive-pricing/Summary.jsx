@@ -18,7 +18,7 @@ const Summary = () => {
             Interactive Design / Front End Development
           </p>
           <p className="text-[0.813rem] font-bold leading-[1.875rem] tracking-normal text-[#5FB4A2]">
-            HTML / CSS
+            HTML / CSS / JS
           </p>
         </div>
         <a

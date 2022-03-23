@@ -55,7 +55,7 @@ const Time = () => {
         </p>
         <Link
           className="flex h-12 w-[10.938rem] items-center justify-center border border-solid border-[#33323D] text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-[#33323D] hover:bg-[#33323D] hover:text-white active:bg-[#33323D] active:text-white"
-          to="/portfolio/time"
+          to="/portfolio/time-tracking-dashboard"
         >
           View Project
         </Link>
