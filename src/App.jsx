@@ -13,6 +13,7 @@ import Maker from "./components/detail/maker/Maker";
 import Typemaster from "./components/detail/typemaster/Typemaster";
 import Github from "./components/detail/github/Github";
 import Art from "./components/detail/art/Art";
+import Suite from "./components/detail/suite/Suite";
 
 function App() {
   const [size, setSize] = useState({
@@ -66,6 +67,9 @@ function App() {
             </Route>
             <Route path="/portfolio/art-gallery">
               <Art />
+            </Route>
+            <Route exact path="/portfolio/suite">
+              <Suite />
             </Route>
           </Switch>
         </div>

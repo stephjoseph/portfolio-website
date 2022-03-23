@@ -7,16 +7,15 @@ const Summary = () => {
         </h1>
         <p className="text-base font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80 md:hidden xl:mb-[1.438rem] xl:block">
           This project required me to build a fully responsive landing page to
-          the designs provided. I used HTML5, along with CSS Flexbox for layout
-          purposes. The only JavaScript this project required was for the custom
-          form validation. I also used Tailwind as CSS Framework.
+          the designs provided. I used HTML5, along with CSS Flexbox and CSS
+          Grid for layout purposes. I also used Tailwind as CSS Framework.
         </p>
         <div className="flex flex-col xl:mb-8">
           <p className="text-[0.813rem] font-bold leading-[1.875rem] tracking-normal text-[#5FB4A2]">
             Interactive Design / Front End Development
           </p>
           <p className="text-[0.813rem] font-bold leading-[1.875rem] tracking-normal text-[#5FB4A2]">
-            HTML / CSS / JS
+            HTML / CSS
           </p>
         </div>
         <a
@@ -29,9 +28,8 @@ const Summary = () => {
       </div>
       <p className="hidden w-[49.20%] text-[0.938rem] font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80 md:block xl:hidden">
         This project required me to build a fully responsive landing page to the
-        designs provided. I used HTML5, along with CSS Flexbox for layout
-        purposes. The only JavaScript this project required was for the custom
-        form validation. I also used Tailwind as CSS Framework.
+        designs provided. I used HTML5, along with CSS Flexbox and CSS Grid for
+        layout purposes. I also used Tailwind as CSS Framework.
       </p>
     </section>
   );
