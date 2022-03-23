@@ -8,7 +8,7 @@ const PrevNext = () => {
       <div className="flex w-1/2 border-y border-r-[0.5px] border-solid border-[#33323D]/[0.15] py-6 md:py-8">
         <Link
           className="flex w-1/2 flex-col items-start gap-4 md:w-1/2 md:flex-row md:items-center md:gap-8"
-          to="/portfolio/faq"
+          to="/portfolio/faq-accordion"
         >
           <div>
             <img src={arrowLeft} alt="" />
