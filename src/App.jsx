@@ -18,6 +18,7 @@ import Time from "./components/detail/time/Time";
 import Crowdfunding from "./components/detail/crowdfunding/Crowdfunding";
 import Pricing from "./components/detail/interactive-pricing/Pricing";
 import Testimonials from "./components/detail/testimonials-slider/Testimonials";
+import Equalizer from "./components/detail/equalizer/Equalizer";
 
 function App() {
   const [size, setSize] = useState({
@@ -86,6 +87,9 @@ function App() {
             </Route>
             <Route exact path="/portfolio/testimonials-slider">
               <Testimonials />
+            </Route>
+            <Route exact path="/portfolio/equalizer">
+              <Equalizer />
             </Route>
           </Switch>
         </div>
