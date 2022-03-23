@@ -10,6 +10,7 @@ import ScrollToTop from "./components/scrollToTop";
 import Tip from "./components/detail/tip/Tip";
 import Officelite from "./components/detail/officelite/Officelite";
 import Maker from "./components/detail/maker/Maker";
+import Typemaster from "./components/detail/typemaster/Typemaster";
 
 function App() {
   const [size, setSize] = useState({
@@ -54,6 +55,9 @@ function App() {
             </Route>
             <Route path="/portfolio/maker">
               <Maker />
+            </Route>
+            <Route path="/portfolio/typemaster">
+              <Typemaster />
             </Route>
           </Switch>
         </div>
