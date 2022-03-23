@@ -14,6 +14,7 @@ import Typemaster from "./components/detail/typemaster/Typemaster";
 import Github from "./components/detail/github/Github";
 import Art from "./components/detail/art/Art";
 import Suite from "./components/detail/suite/Suite";
+import Time from "./components/detail/time/Time";
 
 function App() {
   const [size, setSize] = useState({
@@ -70,6 +71,9 @@ function App() {
             </Route>
             <Route exact path="/portfolio/suite">
               <Suite />
+            </Route>
+            <Route exact path="/portfolio/time-tracking-dashboard">
+              <Time />
             </Route>
           </Switch>
         </div>
