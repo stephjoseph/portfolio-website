@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
+import Tip from "./components/detail/tip/Tip";
 
 function App() {
   const [size, setSize] = useState({
@@ -42,6 +43,9 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/portfolio/tip">
+              <Tip />
             </Route>
           </Switch>
         </div>
