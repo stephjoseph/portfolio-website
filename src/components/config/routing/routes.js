@@ -1,5 +1,10 @@
 import views from "./views";
 
+const Home = {
+  component: views.Home,
+  path: "/",
+};
+
 const Portfolio = {
   component: views.Portfolio,
   path: "/portfolio",
@@ -86,6 +91,7 @@ const FAQAccordion = {
 };
 
 export default [
+  Home,
   Portfolio,
   Contact,
   Tip,
