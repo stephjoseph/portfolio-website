@@ -1,27 +1,11 @@
 import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
 import MobileNav from "./components/MobileNav";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
-import Tip from "./components/detail/tip/Tip";
-import Officelite from "./components/detail/officelite/Officelite";
-import Maker from "./components/detail/maker/Maker";
-import Typemaster from "./components/detail/typemaster/Typemaster";
-import Github from "./components/detail/github/Github";
-import Art from "./components/detail/art/Art";
-import Suite from "./components/detail/suite/Suite";
-import Time from "./components/detail/time/Time";
-import Crowdfunding from "./components/detail/crowdfunding/Crowdfunding";
-import Pricing from "./components/detail/interactive-pricing/Pricing";
-import Testimonials from "./components/detail/testimonials-slider/Testimonials";
-import Equalizer from "./components/detail/equalizer/Equalizer";
-import Meet from "./components/detail/meet/Meet";
-import Pod from "./components/detail/pod/Pod";
-import FAQAccordion from "./components/detail/faq-accordion/FAQAccordion";
+import routes from "./components/config/routing/routes";
 
 function App() {
   const [size, setSize] = useState({
@@ -52,57 +36,13 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/portfolio/tip">
-              <Tip />
-            </Route>
-            <Route path="/portfolio/officelite">
-              <Officelite />
-            </Route>
-            <Route path="/portfolio/maker">
-              <Maker />
-            </Route>
-            <Route path="/portfolio/typemaster">
-              <Typemaster />
-            </Route>
-            <Route path="/portfolio/github-user-search">
-              <Github />
-            </Route>
-            <Route path="/portfolio/art-gallery">
-              <Art />
-            </Route>
-            <Route exact path="/portfolio/suite">
-              <Suite />
-            </Route>
-            <Route exact path="/portfolio/time-tracking-dashboard">
-              <Time />
-            </Route>
-            <Route exact path="/portfolio/crowdfunding">
-              <Crowdfunding />
-            </Route>
-            <Route exact path="/portfolio/interactive-pricing">
-              <Pricing />
-            </Route>
-            <Route exact path="/portfolio/testimonials-slider">
-              <Testimonials />
-            </Route>
-            <Route exact path="/portfolio/equalizer">
-              <Equalizer />
-            </Route>
-            <Route exact path="/portfolio/meet">
-              <Meet />
-            </Route>
-            <Route exact path="/portfolio/pod">
-              <Pod />
-            </Route>
-            <Route exact path="/portfolio/faq-accordion">
-              <FAQAccordion />
-            </Route>
+            {routes.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                component={route.component}
+              />
+            ))}
           </Switch>
         </div>
         <Footer />
