@@ -36,13 +36,22 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            {routes.map((route) => (
-              <Route
-                key={route.path}
-                path={route.path}
-                component={route.component}
-              />
-            ))}
+            {routes.map((route) =>
+              route.path === "/" || route.path === "/portfolio" ? (
+                <Route
+                  exact
+                  key={route.path}
+                  path={route.path}
+                  component={route.component}
+                />
+              ) : (
+                <Route
+                  key={route.path}
+                  path={route.path}
+                  component={route.component}
+                />
+              )
+            )}
           </Switch>
         </div>
         <Footer />
