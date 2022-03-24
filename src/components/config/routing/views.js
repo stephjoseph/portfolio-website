@@ -1,3 +1,4 @@
+import Home from "../../Home";
 import Portfolio from "../../Portfolio";
 import Contact from "../../Contact";
 import Tip from "../../detail/tip/Tip";
@@ -17,6 +18,7 @@ import Pod from "../../detail/pod/Pod";
 import FAQAccordion from "../../detail/faq-accordion/FAQAccordion";
 
 export default {
+  Home,
   Portfolio,
   Contact,
   Tip,
