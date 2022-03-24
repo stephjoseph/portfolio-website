@@ -1,4 +1,3 @@
-import Home from "./components/Home";
 import MobileNav from "./components/MobileNav";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -6,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop";
 import routes from "./components/config/routing/routes";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   const [size, setSize] = useState({
@@ -49,6 +49,7 @@ function App() {
                 />
               )
             )}
+            <Route component={PageNotFound} />
           </Switch>
         </div>
         <Footer />
