@@ -78,7 +78,7 @@ const AboutMe = () => {
           I’m based in Cebu, Philippines, but I’m happy working remotely and
           have experience in remote teams. When I’m not coding, you’ll find me
           outdoors. I love being out in nature whether that’s going for a walk,
-          run or motorbike ride. I’d love you to check out my work.
+          run or a motorbike ride. I’d love you to check out my work.
         </p>
         <Link
           className="flex h-12 w-[12.625rem] items-center justify-center border border-solid border-[#33323D] text-[0.75rem] uppercase leading-[0.875rem] tracking-[2px] hover:bg-[#33323D] hover:text-white active:bg-[#33323D] active:text-white"
