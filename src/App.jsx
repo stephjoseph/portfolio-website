@@ -55,7 +55,7 @@ function App() {
             <Route exact path="/portfolio">
               <Portfolio />
             </Route>
-            <Route path="/contact">
+            <Route exact path="/contact">
               <Contact />
             </Route>
             <Route path="/portfolio/tip">
