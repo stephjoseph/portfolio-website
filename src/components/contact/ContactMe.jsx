@@ -1,14 +1,46 @@
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const ContactMe = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_i9xyjrr",
+        "template_jmd3b0i",
+        form.current,
+        "dcFsyWMEj1bpaV__F"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    alert("Email Sent!");
+    location.reload();
+  };
+
   return (
     <section className="flex flex-col gap-6 md:gap-8 xl:flex-row xl:gap-[7.813rem]">
       <h2 className="font-['Ibarra_Real_Nova'] text-[2.5rem] font-bold leading-[2.625rem] tracking-[-0.36px] text-[#33323D] xl:w-[31.53%]">
         Contact Me
       </h2>
-      <form className="flex flex-col gap-6 xl:w-[57.20%]" action="#">
+      <form
+        className="flex flex-col gap-6 xl:w-[57.20%]"
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <div className="flex flex-col gap-2">
           <label
             className="text-[0.813rem] font-bold leading-[1.875rem] tracking-normal text-[#33323D]/80"
-            for="name"
+            htmlFor="name"
           >
             Name
           </label>
@@ -18,12 +50,13 @@ const ContactMe = () => {
             id="name"
             placeholder="Jane Appleseed"
             required
+            name="user_name"
           />
         </div>
         <div className="flex flex-col gap-2">
           <label
             className="text-[0.813rem] font-bold leading-[1.875rem] tracking-normal text-[#33323D]/80"
-            for="email"
+            htmlFor="email"
           >
             Email Address
           </label>
@@ -33,12 +66,13 @@ const ContactMe = () => {
             id="email"
             placeholder="email@example.com"
             required
+            name="user_email"
           />
         </div>
         <div className="flex flex-col gap-2">
           <label
             className="text-[0.813rem] font-bold leading-[1.875rem] tracking-normal text-[#33323D]/80"
-            for="message"
+            htmlFor="message"
           >
             Message
           </label>
@@ -47,7 +81,8 @@ const ContactMe = () => {
             id="message"
             placeholder="How can I help?"
             required
-          ></textarea>
+            name="message"
+          />
         </div>
         <button
           className="flex h-12 w-[12.5rem] items-center justify-center bg-[#203A4C] text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-white hover:bg-[#5FB4A2] active:bg-[#5FB4A2]"
