@@ -7,13 +7,13 @@ const GetInTouch = () => {
       <div className="flex flex-col gap-6 xl:w-[57.20%]">
         <p className="text-[0.938rem] font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80">
           I’d love to hear about what you’re working on and how I could help.
-          I’m currently looking for a new role and am open to a wide range of
-          opportunities. My preference would be to find a junior position in a
-          company that offers remote work. But I’m also happy to hear about
-          opportunites that don’t fit that description. I’m a hard-working and
-          positive person who will always approach each task with a sense of
-          purpose and attention to detail. Please do feel free to check out my
-          online profiles below and get in touch using the form.
+          I’m currently looking for a junior position role and am open to a wide
+          range of opportunities. My preference would be to find a junior
+          position in a company that offers remote work. But I’m also happy to
+          hear about opportunites that don’t fit that description. I’m a
+          hard-working and positive person who will always approach each task
+          with a sense of purpose and attention to detail. Please do feel free
+          to check out my online profiles below and get in touch using the form.
         </p>
         <div className="flex items-center gap-4">
           <a
