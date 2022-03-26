@@ -48,11 +48,11 @@ const FAQ = () => {
           FAQ Accordion
         </h2>
         <p className="text-[0.938rem] font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80 md:mb-[2.188rem]">
-          This project was built with HTML, CSS, and React JS. I had mobile and
-          desktop designs to work with and built it so that it was
-          fully-responsive. I took a mobile-first approach and used modern CSS
-          like Flexbox and Grid for layout purposes. The JavaScript this project
-          required was for the accordion to be interactive.
+          This project was built with React JS. I had mobile and desktop designs
+          to work with and built it so that it was fully-responsive. I took a
+          mobile-first approach and used modern CSS like Flexbox and Grid for
+          layout purposes. The JavaScript this project required was for the
+          accordion to be interactive.
         </p>
         <Link
           className="flex h-12 w-[10.938rem] items-center justify-center border border-solid border-[#33323D] text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-[#33323D] hover:bg-[#33323D] hover:text-white active:bg-[#33323D] active:text-white"
