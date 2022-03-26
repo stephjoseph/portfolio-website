@@ -21,7 +21,7 @@ const Pricing = () => {
       {
         scrollTrigger: {
           trigger: element,
-          toggleActions: "restart reverse play pause",
+          toggleActions: "play reverse play pause",
         },
         duration: 1.5,
         x: 0,
