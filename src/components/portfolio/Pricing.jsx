@@ -9,6 +9,9 @@ const Pricing = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+      scroller: "#root",
+    });
 
     const element = pricingRef.current;
 

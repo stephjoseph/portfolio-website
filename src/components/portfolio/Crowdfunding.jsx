@@ -9,6 +9,9 @@ const Crowdfunding = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+      scroller: "#root",
+    });
 
     const element = crowdfundingRef.current;
 

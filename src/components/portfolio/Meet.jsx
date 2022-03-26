@@ -9,6 +9,9 @@ const Meet = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+      scroller: "#root",
+    });
 
     const element = meetRef.current;
 

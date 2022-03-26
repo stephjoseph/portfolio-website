@@ -9,6 +9,9 @@ const Equalizer = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+      scroller: "#root",
+    });
 
     const element = equalizerRef.current;
 

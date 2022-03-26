@@ -9,6 +9,9 @@ const Testimonials = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+      scroller: "#root",
+    });
 
     const element = testimonialsRef.current;
 

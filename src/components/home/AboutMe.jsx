@@ -11,6 +11,9 @@ const AboutMe = () => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(TextPlugin);
     gsap.registerPlugin(ScrollToPlugin);
+    ScrollTrigger.defaults({
+      scroller: "#root",
+    });
 
     const element = aboutRef.current;
 

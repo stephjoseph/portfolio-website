@@ -9,6 +9,9 @@ const Tip = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+      scroller: "#root",
+    });
 
     const element = officeliteRef.current;
 

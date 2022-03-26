@@ -9,6 +9,9 @@ const Typemaster = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+      scroller: "#root",
+    });
 
     const element = typemasterRef.current;
 
