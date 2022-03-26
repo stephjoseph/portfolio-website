@@ -6,11 +6,11 @@ const Summary = () => {
           FAQ Accordion
         </h1>
         <p className="text-base font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80 md:hidden xl:mb-[1.438rem] xl:block">
-          This project was built with HTML, CSS, and React JS. I had mobile and
-          desktop designs to work with and built it so that it was
-          fully-responsive. I took a mobile-first approach and used modern CSS
-          like Flexbox and Grid for layout purposes. The JavaScript this project
-          required was for the accordion to be interactive.
+          This project was built with React JS. I had mobile and desktop designs
+          to work with and built it so that it was fully-responsive. I took a
+          mobile-first approach and used modern CSS like Flexbox and Grid for
+          layout purposes. The JavaScript this project required was for the
+          accordion to be interactive.
         </p>
         <div className="flex flex-col xl:mb-8">
           <p className="text-[0.813rem] font-bold leading-[1.875rem] tracking-normal text-[#5FB4A2]">
@@ -29,11 +29,11 @@ const Summary = () => {
         </a>
       </div>
       <p className="hidden w-[49.20%] text-[0.938rem] font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80 md:block xl:hidden">
-        This project was built with HTML, CSS, and React JS. I had mobile and
-        desktop designs to work with and built it so that it was
-        fully-responsive. I took a mobile-first approach and used modern CSS
-        like Flexbox and Grid for layout purposes. The JavaScript this project
-        required was for the accordion to be interactive.
+        This project was built with React JS. I had mobile and desktop designs
+        to work with and built it so that it was fully-responsive. I took a
+        mobile-first approach and used modern CSS like Flexbox and Grid for
+        layout purposes. The JavaScript this project required was for the
+        accordion to be interactive.
       </p>
     </section>
   );
