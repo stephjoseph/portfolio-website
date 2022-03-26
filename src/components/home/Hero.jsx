@@ -7,7 +7,7 @@ const Hero = () => {
   const heroRef = useRef(null);
 
   function handleClick() {
-    gsap.to(window, {
+    gsap.to("#root", {
       duration: 1,
       scrollTo: { y: "#about-me", offsetY: 50 },
     });
