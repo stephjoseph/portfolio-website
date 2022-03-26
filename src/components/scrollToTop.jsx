@@ -5,7 +5,7 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    gsap.to(window, {
+    gsap.to("#root", {
       duration: 1,
       scrollTo: { y: 0 },
     });
