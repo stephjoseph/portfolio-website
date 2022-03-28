@@ -74,15 +74,14 @@ const AboutMe = () => {
           About Me
         </h2>
         <p className="mb-6 text-base font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80">
-          I’m a self-taught front-end developer open for a junior position role
-          in an exciting company. I focus on writing accessible HTML, using
-          modern CSS practices and writing clean JavaScript. When writing
-          JavaScript code, I mostly use React, but I can adapt to whatever tools
-          are required. I’m based in Cebu, Philippines, but I’m happy working
-          remotely and have experience in remote teams. When I’m not coding,
-          you’ll find me outdoors. I love being out in nature whether that’s
-          going for a walk, run or a motorbike ride. I’d love you to check out
-          my work.
+          I’m a self-taught front-end developer open for a junior position in an
+          exciting company. I focus on writing accessible HTML, using modern CSS
+          practices and writing clean JavaScript. When writing JavaScript code,
+          I mostly use React, but I can adapt to whatever tools are required.
+          I’m based in Cebu, Philippines, but I’m happy working remotely and
+          have experience in remote teams. When I’m not coding, you’ll find me
+          outdoors. I love being out in nature whether that’s going for a walk,
+          run or a motorbike ride. I’d love you to check out my work.
         </p>
         <Link
           className="flex h-12 w-[12.625rem] items-center justify-center border border-solid border-[#33323D] text-[0.75rem] uppercase leading-[0.875rem] tracking-[2px] hover:bg-[#33323D] hover:text-white active:bg-[#33323D] active:text-white"
