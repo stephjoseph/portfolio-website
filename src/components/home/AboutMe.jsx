@@ -74,8 +74,9 @@ const AboutMe = () => {
           About Me
         </h2>
         <p className="mb-6 text-base font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80">
-          I’m a self-taught front-end developer open for a junior position in an
-          exciting company. I focus on writing accessible HTML, using modern CSS
+          I’m a self-taught front-end web developer open for a junior position
+          in a team of talented individuals where I can build engaging digital
+          experiences with. I focus on writing accessible HTML, using modern CSS
           practices and writing clean JavaScript. When writing JavaScript code,
           I mostly use React, but I can adapt to whatever tools are required.
           I’m based in Cebu, Philippines, but I’m happy working remotely and
