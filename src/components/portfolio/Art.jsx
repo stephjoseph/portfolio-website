@@ -50,7 +50,8 @@ const Art = () => {
           This project required me to build a fully responsive art gallery
           website to the designs provided. I used HTML5, along with CSS Flexbox
           and CSS Grid for layout purposes. I also used Tailwind as CSS
-          Framework.
+          Framework and Leaflet JS to create an interactive location map with
+          custom location pin.
         </p>
         <Link
           className="flex h-12 w-[10.938rem] items-center justify-center border border-solid border-[#33323D] text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-[#33323D] hover:bg-[#33323D] hover:text-white active:bg-[#33323D] active:text-white"
