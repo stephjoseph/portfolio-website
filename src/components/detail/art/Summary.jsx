@@ -9,7 +9,8 @@ const Summary = () => {
           This project required me to build a fully responsive art gallery
           website to the designs provided. I used HTML5, along with CSS Flexbox
           and CSS Grid for layout purposes. I also used Tailwind as CSS
-          Framework.
+          Framework and Leaflet JS to create an interactive location map with
+          custom location pin.
         </p>
         <div className="flex flex-col xl:mb-8">
           <p className="text-[0.813rem] font-bold leading-[1.875rem] tracking-normal text-[#5FB4A2]">
@@ -21,7 +22,7 @@ const Summary = () => {
         </div>
         <a
           className="flex h-12 w-[11.125rem] items-center justify-center border border-solid border-[#33323D] text-[0.75rem] font-normal uppercase leading-[0.875rem] tracking-[2px] text-[#33323D] hover:bg-[#33323D] hover:text-white active:bg-[#33323D] active:text-white"
-          href="https://modern-art-gallery-website-by-stephjoseph.netlify.app/"
+          href="https://art-gallery-website-by-stephjoseph.netlify.app/"
           target="_blank"
         >
           Visit Website
@@ -30,7 +31,9 @@ const Summary = () => {
       <p className="hidden w-[49.20%] text-[0.938rem] font-normal leading-[1.875rem] tracking-normal text-[#33323D]/80 md:block xl:hidden">
         This project required me to build a fully responsive art gallery website
         to the designs provided. I used HTML5, along with CSS Flexbox and CSS
-        Grid for layout purposes. I also used Tailwind as CSS Framework.
+        Grid for layout purposes. I also used Tailwind as CSS Framework and
+        Leaflet JS to create an interactive location map with custom location
+        pin.
       </p>
     </section>
   );
